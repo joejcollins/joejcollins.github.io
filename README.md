@@ -1,1 +1,3 @@
-# joejcollins.github.io
+# Jekyll Example
+
+http://www.jekyllnow.com/
