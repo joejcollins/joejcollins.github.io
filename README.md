@@ -1,11 +1,16 @@
 # Website
 
+## AWS Cloud 9
+
+* Delete .c9 and README
+* git clone https://github.com/joejcollins/joejcollins.github.io.git ./
+
 ## To set up
 
 * gem install jekyll bundler
 * bundle install
 
-## To Run on C9
+## To Run on AWS Cloud 9
 
 bundle exec jekyll serve --host 0.0.0.0 --port 8080
 
