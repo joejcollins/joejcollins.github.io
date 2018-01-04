@@ -1,7 +1,6 @@
 ---
-layout: default
+layout: post
 ---
-# {{ page.title }}
 A review of "The Art of Lean Software Development"
 
 Available on Amazon at:

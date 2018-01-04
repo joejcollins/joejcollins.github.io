@@ -1,6 +1,5 @@
 ---
 layout: post
-title: Setting up your GitHub Pages site locally with Jekyll
 ---
 
 Install Ruby etc... on my laptop.  No thanks.  I like to keep it clean and tidy.

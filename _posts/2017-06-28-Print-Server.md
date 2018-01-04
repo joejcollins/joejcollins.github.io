@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Raspberry Pi Zero Print Server for Laserjet 1005
 ---
+## Raspberry Pi Zero Print Server for Laserjet 1005
 
-# Setup the Pi Zero
+### Setup the Pi Zero
 
 1. Image a micro SD card with the Raspbian (Stretch) OS image using Etcher.
 
