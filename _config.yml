@@ -35,8 +35,8 @@ sass:
   style: :expanded # You might prefer to minify using :compressed
 
 # Conversion
-markdown:         kramdown
-highlighter:      rouge
+markdown: kramdown
+highlighter: rouge
 
 # Markdown Processor
 kramdown:
