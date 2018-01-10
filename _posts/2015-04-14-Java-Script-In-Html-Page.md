@@ -2,7 +2,7 @@
 layout: post
 ---
 
-Stuff to say
+JavaScript on the page.
 
 ```javascript
 $(function() {
@@ -23,7 +23,7 @@ $(function() {
 });
 ```
 
-More stuff.
+Method on the controller.
 
 
 ```csharp
