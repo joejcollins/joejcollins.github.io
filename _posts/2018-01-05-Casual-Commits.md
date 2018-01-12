@@ -2,6 +2,7 @@
 layout: post
 ---
 
+Can't be bothered to think of a commit message?  Then put in the weather and the news.
 
 ```python
 # -*- coding: utf-8 -*-
