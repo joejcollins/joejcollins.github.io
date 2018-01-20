@@ -1,7 +1,6 @@
 ---
 layout: post
 ---
-
 The Independent Press Standards Organisation (IPSO) publishes rulings for inaccuracy 2017.
 <https://tabloidcorrections.wordpress.com/2018/01/02/statistics-show-that-daily-mail-was-by-far-the-most-unreliable-uk-paper-in-2017/>
 Is there are relationship with circulation?
