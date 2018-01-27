@@ -25,7 +25,6 @@ $(function() {
 
 Method on the controller.
 
-
 ```csharp
 public JsonResult ReportData(Guid? id)
 {
