@@ -4,7 +4,7 @@ layout: post
 
 Is the hotness related to size.
 
-![Scatter of Hotness and Size]({{ site.url }}/assets/chillis.jpg)
+![Different Chillis]({{ site.url }}/assets/chillis.jpg)
 
 Load the data.
 
