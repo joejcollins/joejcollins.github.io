@@ -1,1 +1,0 @@
-{% include_relative how-hot-is-my-chilli/01-how-hot-is-my-chilli.md %}
