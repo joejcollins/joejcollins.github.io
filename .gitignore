@@ -1,10 +1,13 @@
-.c9
 _site
 .DS_Store
 .jekyll
 .jekyll-metadata
 .bundle
+.Rproj.user
+*.Rproj
+.Rhistory
 .sass-cache
+Gemfile
 Gemfile.lock
 node_modules
 package.json
