@@ -26,7 +26,7 @@ cor.test(Newspapers$Rulings, Newspapers$Circulation, method="pearson")
 
 Probably not.
 
-![Scatter of Circulation and Rulings]({{ site.url }}/assets/CirculationAndInaccuracy.png)
+![Scatter of Circulation and Rulings]({{ site.url }}/assets/circulation-and-inaccuracy)
 
     	Pearson's product-moment correlation
     
