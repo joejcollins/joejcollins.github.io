@@ -13,7 +13,7 @@ cor.test(chillis$hotness, chillis$size.in.cm, method="pearson")
 # Maybe we should remove outliers using Cooks distance
 mod <- lm(chillis$hotness ~ chillis$size.in.cm, data=chillis)
 cooksd <- cooks.distance(mod)
-plot(cooksd, pch="*", cex=2, main="Influential Obs by Cooks distance") 
+plot(cooksd, pch="*", cex=2, main="Influential Observations by Cooks distance") 
 abline(h = 4*mean(cooksd, na.rm=T), col="red")
 text(x=1:length(cooksd)+1, y=cooksd, labels=ifelse(cooksd>4*mean(cooksd, na.rm=T),names(cooksd),""), col="red")
 influential <- as.numeric(names(cooksd)[(cooksd > 4*mean(cooksd, na.rm=T))])  # influential row numbers
