@@ -19,9 +19,9 @@ The correlation then goes up to 0.77.
 {% include_relative how-hot-is-my-chilli/02-chillis.r %}
 ```
 
-![hotness and length]({{ site.url }}/assets/chillis-hotness-and-length.png)
+![Hotness and length]({{ site.url }}/assets/chillis-hotness-and-length.png)
 
-![hotness and length]({{ site.url }}/assets/chillis-cooks-distance.png)
+![Cooks distance]({{ site.url }}/assets/chillis-cooks-distance.png)
 
 Results in this.
 
