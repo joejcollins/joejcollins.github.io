@@ -21,19 +21,18 @@ The correlation then goes up to 0.77.
 
 ![hotness and length]({{ site.url }}/assets/chillis-hotness-and-length.png)
 
-![hotness and length]({{ site.url }}/assets/chillis-cooks-distance)
+![hotness and length]({{ site.url }}/assets/chillis-cooks-distance.png)
 
 Results in this.
 
 	Pearson's product-moment correlation
-
-data:  chillis$hotness and chillis$size.in.cm
-t = -6.3295, df = 26, p-value = 1.058e-06
-alternative hypothesis: true correlation is not equal to 0
-95 percent confidence interval:
- -0.8925128 -0.5717768
-sample estimates:
-       cor 
--0.7787363 
+    data:  chillis$hotness and chillis$size.in.cm
+    t = -6.3295, df = 26, p-value = 1.058e-06
+    alternative hypothesis: true correlation is not equal to 0
+    95 percent confidence interval:
+     -0.8925128 -0.5717768
+    sample estimates:
+           cor 
+    -0.7787363 
 
 So yeah, the small ones are hotter.
