@@ -9,13 +9,14 @@ Is the hotness related to size.
 Load the data.
 
 ```
-{% include_relative how-hot-is-my-chilli/02-chillis.csv %}
+{% include_relative how-hot-is-my-chilli/01-chillis.csv %}
 ```
 
-Scatter plot and correlation
+Scatter plot and correlation. There seem to be some outliers, which I removed.
+The correlation then goes up to 0.77.
 
 ```R
-{% include_relative how-hot-is-my-chilli/04-chillis.r %}
+{% include_relative how-hot-is-my-chilli/02-chillis.r %}
 ```
 
 Results in this.
@@ -31,4 +32,4 @@ Results in this.
         cor 
     -0.6291894 
 
-So not much correlation.
+So yeah, the small ones are hotter.
