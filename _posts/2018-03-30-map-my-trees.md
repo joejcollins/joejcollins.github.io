@@ -21,9 +21,13 @@ function initMap() {
         west: -7.940282
     };
 
+    var options = {
+        opacity:0.5
+    }
+
     var image = '{{ site.url }}assets/tree-map.png'
 
-    treeOverlay = new google.maps.GroundOverlay(image, bounds);
+    treeOverlay = new google.maps.GroundOverlay(image, bounds, options);
     treeOverlay.setMap(map);
 }
 
