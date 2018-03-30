@@ -2,7 +2,9 @@
 
 <http://zevross.com/blog/2015/08/21/process-a-raster-for-use-in-a-google-map-using-r/>
 
-<div id="map"></div>
+<div style="height:100%; width:100%;">
+    <div id="map"></div>
+</div>
 
 <script>
 var treeOverlay;
