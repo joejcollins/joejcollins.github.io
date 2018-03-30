@@ -31,4 +31,4 @@ landuseOverlay.setMap(map);
 }
 
 </script>
-<script async="" defer src="https://maps.googleapis.com/maps/api/js?callback=initMap&signed_in=true"></script>
+<script async="" defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUWJlzi5DB9NpE3r5XhwHSuIdqvrAoC9w&callback=initMap&signed_in=true"></script>
