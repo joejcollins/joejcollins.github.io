@@ -10,7 +10,7 @@ var treeOverlay;
 function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 4,
-    center: {lat: 52.489471, lng: ‎-1.898575},
+    center: {lat: 52.489471, lng: -1.898575},
     mapTypeId: google.maps.MapTypeId.TERRAIN
     });
 
