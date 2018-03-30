@@ -2,6 +2,8 @@
 
 <http://zevross.com/blog/2015/08/21/process-a-raster-for-use-in-a-google-map-using-r/>
 
+<https://www.datacamp.com/courses/spatial-analysis-in-r-with-sf-and-raster>
+
 <div id="map" style="height:525px; width:525px;"></div>
 
 <script>
