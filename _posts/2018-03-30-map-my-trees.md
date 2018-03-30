@@ -14,9 +14,12 @@ function initMap() {
     mapTypeId: google.maps.MapTypeId.TERRAIN
     });
 
-    var bounds = new google.maps.LatLngBounds(
-        new google.maps.LatLng(49.83462, -7.940282),
-        new google.maps.LatLng(58.7527, 2.470118));
+    var bounds = {
+        north: 58.7527,
+        south: 49.83462,
+        east: 2.470118,
+        west: -7.940282
+    };
 
     var overlayOpts = {
         opacity:0.5
@@ -29,4 +32,4 @@ function initMap() {
 }
 
 </script>
-<script async="" defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUWJlzi5DB9NpE3r5XhwHSuIdqvrAoC9w&callback=initMap"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUWJlzi5DB9NpE3r5XhwHSuIdqvrAoC9w&callback=initMap"></script>
