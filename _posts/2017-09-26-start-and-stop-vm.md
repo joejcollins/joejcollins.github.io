@@ -2,7 +2,7 @@
 layout: post
 ---
 
-For convenience and to save cost stop and deallocate the development VM on Azure.
+For convenience and to save costs stop and deallocate the development VM on Azure.
 
 ```powershell
 # PowerShell -Command .\develop-vm.ps1 -PowerOn:$false
