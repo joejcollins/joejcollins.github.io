@@ -2,33 +2,35 @@
 layout: post
 ---
 
-# On Windows
+## On Windows
 
-1. Install Chocolatey
+### Install Chocolatey
 
     @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
 
 This is largely because Chocolatey has a package to install synctex, which allows you to flip between the PDF and the LaTeX source in VSCode.  MikTeX does include synctex to allow you to do this in TeXworks, but this doesn't work for VSCode.  For convenience you might as well install vscode and miktex using Chocolatey as well, but this isn't essential.
 
-2. Install three packages
+### Install three packages
 
     choco install vscode
     choco install miktex.install
     choco install synctex
 
-3. Start the MikTeX Package Manager
+### Start the MikTeX Package Manager
 
     mpm
 
 ...and update all the packages.
 
-4. Install LaTeX Workshop for VSCode
+### Install LaTeX Workshop for VSCode
 
     code --install-extension James-Yu.latex-workshop
 
-5. Add a VSCode build task to the project you are working on.
+### Add a VSCode build task
 
-```tasks.json
+...to the project you are working on by editing `tasks.json` like this.
+
+```json
 {
  "version": "0.1.0",
  "isShellCommand": true,
@@ -53,9 +55,11 @@ This is largely because Chocolatey has a package to install synctex, which allow
 ```
 The project should build with Ctrl-Shift-B
 
-6. Add a LaTeX Workshop "recipe" to the VSCode workspace settings.
+### Add a LaTeX Workshop "recipe"
 
-```settings.json
+...to the VSCode workspace settings by editing `settings.json` like this.
+
+```json
 {
     "latex-workshop.latex.recipes": [
         {
@@ -96,8 +100,10 @@ The project should build with Ctrl-Shift-B
     ],
     "editor.minimap.enabled": false
 }
-'''
+```
 
 The project should now build on save (Ctrl-s).
 
-7. Open the PDF viewer with Ctrl-Alt-V or Ctrl-Shift-P > "LaTeX Workshop: View LaTeX PDF file".  In the LaTeX source Right Click > SyncTeX from cursor should take you to the right place in the PDF file. Ctrl-Left Click in the PDF file should take you to the right place in the LaTeX source. 
+### Check SyncTeX
+
+Open the PDF viewer with Ctrl-Alt-V or Ctrl-Shift-P > "LaTeX Workshop: View LaTeX PDF file".  In the LaTeX source Right Click > SyncTeX from cursor should take you to the right place in the PDF file. Ctrl-Left Click in the PDF file should take you to the right place in the LaTeX source. 
