@@ -2,28 +2,39 @@
 layout: post
 ---
 
-## On Windows
+## On Lubuntu
 
-### Install Chocolatey
+### Install MikTeX
 
-    @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+    sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys D6BC243565B2087BC3F897C9277A7293F59E4889
+    echo "deb http://miktex.org/download/ubuntu bionic universe" | sudo tee /etc/apt/sources.list.d/miktex.list
+    sudo apt update
+    sudo apt install miktex
 
-This is largely because Chocolatey has a package to install synctex, which allows you to flip between the PDF and the LaTeX source in VSCode.  MikTeX does include synctex to allow you to do this in TeXworks, but this doesn't work for VSCode.  For convenience you might as well install vscode and miktex using Chocolatey as well, but this isn't essential.
+### Initialize MikTeX Package Manager
 
-### Install three packages
+    sudo miktexsetup --shared=yes finish
+    sudo initexmf --admin --set-config-value [MPM]AutoInstall=1
+    sudo miktex-console --admin
 
-    choco install vscode
-    choco install miktex.install
-    choco install synctex
+![Different Chillis]({{ site.url }}/assets/miktex-admin.jpg)
 
-### Start the MikTeX Package Manager
+Upgrading using the MPM, this is not really necessary but make the first builds faster and more convenient.
 
-    mpm
+### Add tools
 
-...and update all the packages.
+    sudo apt install texworks
+    sudo apt install git
+    sudo apt install chromium-browser
+    sudo update-alternatives --config x-www-browser
 
-### Install LaTeX Workshop for VSCode
+### Install VSCode
 
+    curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+    sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
+    sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
+    sudo apt update
+    sudo apt install cod
     code --install-extension James-Yu.latex-workshop
 
 ### Add a VSCode build task
@@ -58,12 +69,14 @@ The project should build with Ctrl-Shift-B
 ### Add a LaTeX Workshop "recipe"
 
 ...to the VSCode workspace settings by editing `settings.json` like this.
+Unfortunately the `texify` with MikTeX didn't work for me on Lubuntu,
+but your mileage may vary.
 
 ```json
 {
     "latex-workshop.latex.recipes": [
         {
-            "name": "texify",
+            "name": "pdflatex",
             "tools": [
               "pdflatex"
             ]
@@ -85,18 +98,7 @@ The project should build with Ctrl-Shift-B
             "args": [
                 "%DOCFILE%"
             ]
-        },
-        {
-            "name": "texify",
-            "command": "texify",
-            "args": [
-              "--synctex=1",
-              "--pdf",
-              "--tex-option=\"-interaction=nonstopmode\"",
-              "--tex-option=\"-file-line-error\"",
-              "%DOC%.tex"
-            ]
-          }
+        }
     ],
     "editor.minimap.enabled": false
 }
