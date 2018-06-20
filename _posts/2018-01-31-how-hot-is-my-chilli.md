@@ -2,7 +2,7 @@
 layout: post
 ---
 
-Is the hotness related to size.
+Is the hotness related to size?
 
 ![Different Chillis]({{ site.url }}/assets/chillis.jpg)
 
