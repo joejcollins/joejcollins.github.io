@@ -4,6 +4,12 @@ layout: post
 
 ## On Lubuntu
 
+### Remove TexLive
+
+    sudo apt remove texlive-base
+    sudo apt remove texlive-binaries
+    sudo apt remove texlive-latex-base
+
 ### Install MikTeX
 
     sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys D6BC243565B2087BC3F897C9277A7293F59E4889
@@ -30,11 +36,12 @@ Upgrading using the MPM, this is not really necessary but make the first builds 
 
 ### Install VSCode
 
+    sudo apt install curl
     curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
     sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
     sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
     sudo apt update
-    sudo apt install cod
+    sudo apt install code
     code --install-extension James-Yu.latex-workshop
 
 ### Add a VSCode build task
