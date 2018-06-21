@@ -59,7 +59,9 @@ The project should build with Ctrl-Shift-B
 
 ### Add a LaTeX Workshop "recipe"
 
-...to the VSCode workspace settings by editing `settings.json` like this.
+...to the VSCode user settings by editing `settings.json` like this.
+Best not to put it in the workspace settings because
+on Linux `latexmk` is used instead of `texify`.
 
 ```json
 {
