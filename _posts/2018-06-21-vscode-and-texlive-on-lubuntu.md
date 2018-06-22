@@ -27,7 +27,8 @@ TeXLive doesn't install packages automatically the way MikTeX does.
 So if you need a package, 
 search for it in the package manager (Synaptic)
 and install the Ubuntu package that it is contained in.
-Don't mess about with the TeXLive manager (tlmgr)
+Don't mess about with the TeXLive manager (tlmgr),
+it didn't work out of the box for me on Ubuntu 18.04 LTS (Bionic Beaver).
 
 ### Install VSCode
 
@@ -48,7 +49,7 @@ Then install VSCode and LaTeX Workshop.
     code --install-extension James-Yu.latex-workshop
 
 LaTeX Workshop should find latexmk automagically so the LaTeX should be compiled on save.
-This is different from MikTeX on Windows which needs a `settings.json` to point to `texify` (the compiler not the beautifier).
+This is different from MikTeX on Windows which needs a `settings.json` to point to `texify` (the LaTeX compiler, not the beautifier *which is confusing in itself*).
 
 ### Add a VSCode build task
 
