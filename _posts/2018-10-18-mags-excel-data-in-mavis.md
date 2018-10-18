@@ -1,4 +1,6 @@
-# Mags Excel Data
+---
+layout: post
+---
 Load the data this time from the first sheet of an Excel spreadsheet.
 
 ```R
