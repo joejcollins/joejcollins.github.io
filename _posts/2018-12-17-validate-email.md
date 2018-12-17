@@ -99,10 +99,4 @@ unittest.main(argv=[''], verbosity=2, exit=False)
     
     OK
 
-
-
-
-
     <unittest.main.TestProgram at 0x7fc7ba338d10>
-
-
