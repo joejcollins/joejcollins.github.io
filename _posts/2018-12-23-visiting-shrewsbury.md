@@ -4,9 +4,9 @@ layout: post
 
 How many times did I visit Shrewsbury?  Or at least how many times did my telephone visit Shrewsbury?
 
-This is based on this strategy &lt;https: 12="" 2016="" 30="" maps="" shiring.github.io="" standortverlauf_post=""&gt; for querying the location data.
+This is based on this strategy <https://shiring.github.io/maps/2016/12/30/Standortverlauf_post> for querying the location data.
 
-Google Take Out &lt;https: settings="" takeout="" takeout.google.com=""&gt; provides my location data in Json format, with `jsonlite` will load.  The `Location History.json` is already stripped down to 7 days, so there is less of it to handle.  The whole file is pretty big so is difficult to work with on Azure Notebooks.&lt;/https:&gt;&lt;/https:&gt;
+Google Take Out <https://takeout.google.com/settings/takeout> provides my location data in Json format, with `jsonlite` will load.  The `Location History.json` is already stripped down to 7 days, so there is less of it to handle.  The whole file is pretty big so is difficult to work with on Azure Notebooks.
 
 
 ```R
