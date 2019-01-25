@@ -1,4 +1,12 @@
+---
+layout: post
+---
 
+*Abundance distributions for tree species in Great Britain: a two-stage approach to modeling abundance using species distribution modeling and Random Forest* <https://onlinelibrary.wiley.com/doi/10.1002/ece3.2661> (2016) provides predicted abundance map rasters at <https://sylva.org.uk/forestryhorizons/documents/Predicted%20abundance%20map%20rasters.zip>.  These are relatively easy to use in QGIS.
+
+    Layer > Add Layer > Add Raster Layer...
+
+But less straight forward to display on Google Maps.
 
 <http://zevross.com/blog/2015/08/21/process-a-raster-for-use-in-a-google-map-using-r/>
 
@@ -34,4 +42,4 @@ function initMap() {
 }
 
 </script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUWJlzi5DB9NpE3r5XhwHSuIdqvrAoC9w&callback=initMap"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCp-IYVkf_X8PnC304LOeYVfIyGtbIg7HM&callback=initMap"></script>
