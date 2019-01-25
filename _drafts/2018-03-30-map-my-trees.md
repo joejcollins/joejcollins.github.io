@@ -27,7 +27,7 @@ function initMap() {
         opacity:0.5
     }
 
-    var image = '{{ site.url }}assets/tree-map.png'
+    var image = '{{ site.url }}/assets/tree-map.png'
 
     treeOverlay = new google.maps.GroundOverlay(image, bounds, options);
     treeOverlay.setMap(map);

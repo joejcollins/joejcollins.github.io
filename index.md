@@ -1,4 +1,5 @@
 ---
+permalink: /index.html
 layout: default
 ---
 <div class="posts">
