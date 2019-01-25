@@ -14,9 +14,9 @@ Slightly convoluted because `nokogiri` requires some help to install on WSL.  Ch
 
 To run
 
-    bundle exec jekyll serve --host 0.0.0.0 --port 8080
+    bundle exec jekyll serve --host localhost --port 8080
 
 To include drafts
 
-    bundle exec jekyll serve --drafts --host 0.0.0.0 --port 8080
+    bundle exec jekyll serve --drafts --host localhost --port 8080
 

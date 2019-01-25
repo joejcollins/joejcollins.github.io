@@ -8,33 +8,29 @@ layout: post
 
 ![QGIS Tree Map]({{ site.url }}/assets/qgis.png)
 
-But less straight forward to display on Google Maps.
+But less straight forward to display on Google Maps.  Fortunately, Hollie Olmstead has done the hard work and demonstrates a solution <http://zevross.com/blog/2015/08/21/process-a-raster-for-use-in-a-google-map-using-r/> using R.  This is hardly surprising since if you look a the `.grd` files they were originally created with R package 'raster'.  The `.grd` header file comes with and associated `.gri` binary data file of the same name.
 
-<http://zevross.com/blog/2015/08/21/process-a-raster-for-use-in-a-google-map-using-r/>
+```
+{% include_relative map-my-trees/acer-campestre.grd %}
+```
 
-<https://www.datacamp.com/courses/spatial-analysis-in-r-with-sf-and-raster>
+The approach is to transform the raster using a coordinate reference system appropriate to Google Maps and then produce a deformed image to suit.  Hollie Olmstead tries a number of different approaches.  This seems the least obvious, but generates the best result.
+
+```R
+{% include_relative map-my-trees/01-transform.r %}
+```
+Now a the image can be used in a Google Map overlay.
+
+```javascript
+{% include_relative map-my-trees/02-google-map.js %}
+```
+
+Producing this map.
 
 <div id="map" style="height:525px; width:525px;"></div>
 <script>
-var treeOverlay;
-function initMap() {
-    var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 7,
-    center: {lat: 52.489471, lng: -1.898575},
-    mapTypeId: google.maps.MapTypeId.TERRAIN
-    });
-    var bounds = {
-        north: 58.7527,
-        south: 49.83462,
-        east: 2.470118,
-        west: -7.940282
-    };
-    var options = {
-        opacity:0.5
-    }
-    var image = '{{ site.url }}/assets/tree-map2.png'
-    treeOverlay = new google.maps.GroundOverlay(image, bounds, options);
-    treeOverlay.setMap(map);
-}
+{% include_relative map-my-trees/02-google-map.js %}
 </script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCp-IYVkf_X8PnC304LOeYVfIyGtbIg7HM&callback=initMap"></script>
+
+
