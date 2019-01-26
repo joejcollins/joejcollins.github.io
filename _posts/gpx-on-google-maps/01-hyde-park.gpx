@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<gpx version="1.1" creator="GDAL 2.4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ogr="http://osgeo.org/gdal" xmlns="http://www.topografix.com/GPX/1/1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<metadata><bounds minlat="51.501797864590380" minlon="-0.190822140209704" maxlat="51.513105188561454" maxlon="-0.151460481640611"/></metadata>                  
+<trk>
+  <extensions>
+  </extensions>
+  <trkseg>
+    <trkpt lat="51.509807508937385" lon="-0.190822140209704">
+    </trkpt>
+    <trkpt lat="51.502975841767309" lon="-0.187415842833532">
+    </trkpt>
+    <trkpt lat="51.50179786459038" lon="-0.17776466693438">
+    </trkpt>
+    <trkpt lat="51.503211433548742" lon="-0.151460481640611">
+    </trkpt>
+    <trkpt lat="51.513105188561454" lon="-0.159030031365437">
+    </trkpt>
+    <trkpt lat="51.510278620641373" lon="-0.179278576879345">
+    </trkpt>
+    <trkpt lat="51.509807508937385" lon="-0.190822140209704">
+    </trkpt>
+  </trkseg>
+</trk>
+</gpx>
