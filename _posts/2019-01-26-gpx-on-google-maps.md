@@ -34,8 +34,7 @@ This GPX file can be shown on a Google Map like this.
 Producing this map.
 
 <div id="map" style="height:525px; width:525px;"></div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
+<script async defer>
 {% include_relative gpx-on-google-maps/02-gpx.js %}
 </script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCp-IYVkf_X8PnC304LOeYVfIyGtbIg7HM&callback=initMap"></script>

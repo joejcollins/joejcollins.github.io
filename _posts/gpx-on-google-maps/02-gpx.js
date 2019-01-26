@@ -1,14 +1,14 @@
 function initMap() {
-    var spainsHall = new google.maps.LatLng(51.505164646, -0.158166034);
+    var hydePark = new google.maps.LatLng(51.505164646, -0.158166034);
     var mapOptions = {
-        center: spainsHall,
+        center: hydePark,
         zoom: 10,
-        mapTypeId: google.maps.MapTypeId.SATELLITE
+        mapTypeId: google.maps.MapTypeId.TERRAIN
     };
     var map = new google.maps.Map(document.getElementById('map'), mapOptions);
     $.ajax({
         type: "GET",
-        url: "https://raw.githubusercontent.com/joejcollins/atlanta-shore/master/data/raw/outer_fence.gpx",
+        url: "https://raw.githubusercontent.com/joejcollins/joejcollins.github.io/master/_posts/gpx-on-google-maps/01-hyde-park.gpx",
         dataType: "xml",
         success: function (xml) {
             var points = [];
