@@ -4,8 +4,8 @@ layout: post
 
 There might be some utility in rapidly rejecting obviously incorrect
 email addresses without sending an email confirmation to a clearly
-bogus address.  So I'd go with the regex from &lt;https: emailregex.com=""&gt;
-with some additions.&lt;/https:&gt;
+bogus address.  So I'd go with the regex from <https://emailregex.com/>
+with some additions.
 
 ```python
 # -*- coding: utf-8 -*-
@@ -45,7 +45,7 @@ else:
 
 ## Tests
 
-Developing the regex without tests is kind of implausible, so I'll use some supposedly valid and invalid emails from &lt;https: 02="" 06="" 2009="" blogs.msdn.microsoft.com="" email-address-test-cases="" testing123=""&gt;.&lt;/https:&gt;
+Developing the regex without tests is kind of implausible, so I'll use some supposedly valid and invalid emails from <https://blogs.msdn.microsoft.com/testing123/2009/02/06/email-address-test-cases/>.
 
 ```python
 class TestValid(unittest.TestCase):
@@ -61,7 +61,7 @@ class TestValid(unittest.TestCase):
             self.assertTrue(is_valid_email(email))
 ```
 
-There is also a list of invalid emails from &lt;https: 02="" 06="" 2009="" blogs.msdn.microsoft.com="" email-address-test-cases="" testing123=""&gt;. &lt;/https:&gt;
+There is also a list of invalid emails from <https://blogs.msdn.microsoft.com/testing123/2009/02/06/email-address-test-cases/>.
 
 ```python
 class TestInvalid(unittest.TestCase):
