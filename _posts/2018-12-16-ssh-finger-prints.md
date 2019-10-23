@@ -36,7 +36,6 @@ For completeness `for file in ./*.pub; do ssh-keygen -lf "$file" -E sha256; done
     ./key-original.pub is not a public key file.
 
 
-
 ```python
 %%capture
 # Install sshpubkeys because it doesn't come by default with Azure Notebooks
