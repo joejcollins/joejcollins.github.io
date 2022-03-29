@@ -21,6 +21,18 @@ Bertrand Meyer provides a Tour de Force in the French intellectual tradition wit
 
 Maintains a faintly mocking tone which make the book entertaining, but not cruel
 
+* *The Brilliant*
+  * Short iterations - constant feedback is essential.
+  * Continuous integration - not an agile invention, but popularized by XP, big bang is big risk.
+  * Regression test suite - protection against regression.
+  * Closed Window rule - yeah we welcome change but not while we are actually working on something.
+  * Time boxing - brings stability to a project
+  * Product owner - rational representation of customer needs.
+  * Delivering working software - once the project (and its architecture) is established this is the goal.
+  * Velocity measures - metrics for progress, because you are managing money.
+  * Task boards - visibility of progress.
+  * All functionality has tests - contributes significantly to the solidity of software.
+
 
 Shame it is nearly £40 and not an epub.
 
